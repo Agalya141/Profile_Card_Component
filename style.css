@@ -1,1 +1,124 @@
-
+:root{
+    --Blue-600: hsl(185, 75%, 39%);
+    --Navy-950: hsl(229, 23%, 23%);
+    --Gray-500: hsl(227, 10%, 46%);
+    --Gray-100: hsl(225, 10%, 92%);
+    --White:white;
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    background-image:url('bg-pattern-bottom.svg'),url('bg-pattern-top.svg');
+    background-repeat:no-repeat;
+    background-color:var(--Blue-600);
+    font-family:'Kumbh Sans', sans-serif;
+    background-size:-20rem 40%;
+}
+.card{
+    max-width:24rem;
+    width:20rem;
+    background-color:var(--White);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:2rem;
+    overflow:hidden;
+    border-radius:1rem;
+    height:auto;
+    
+}
+.background{
+    background-image:url('bg-pattern-card.svg');
+    width:100%;
+    height:8rem;
+    padding:0;
+    position:relative;
+    
+}
+.img{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+img{
+    border-radius:50%;
+    margin:0 auto;
+    position:absolute;
+    top:4rem;
+    left:50%;
+    transform:translateX(-50%);
+    border:0.5rem solid white;
+    width:8rem;
+    height:8rem;   
+}
+.card_body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:2rem;
+    padding:2rem;
+}
+.details{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+    flex-direction:column;
+    margin-top:1rem;
+}
+.about{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+    font-size:1.5rem;
+}
+.name{
+    font-weight:700;
+}
+.age{
+    font-weight:400;
+    color:var(--Gray-500)
+}
+.address{
+    text-align:center;
+    color:var(--Gray-500)
+}
+hr{
+    width: 20rem;
+    border:1px solid var(--Gray-100);
+}
+.profile_status{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:2rem;
+}
+.profile{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+    flex-direction:column;
+}
+.number{
+    text-align:center;
+    font-size:1.5rem;
+    font-weight:700;
+}
+.text{
+    color:var(--Gray-500);
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing: 2px;
+    text-align:center;
+}
